@@ -1,4 +1,8 @@
 export default function Home() {
-  console.log("hello");
-  return <h1>HII</h1>;
+  return (
+    <>
+      <h1 className="h1-bold font-space-grotesk">Welcome to Next.js</h1>
+      <h1 className="h1-bold font-inter">Welcome to Next.js (INTER)</h1>
+    </>
+  );
 }
