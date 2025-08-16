@@ -1,0 +1,12 @@
+@import "./styles/layers/reset.css";
+@import "tailwindcss";
+@import "tw-animate-css";
+@plugin "@tailwindcss/typography";
+
+@custom-variant dark (&:is(.dark *));
+
+@import "./styles/layers/theme.css";
+@import "./styles/layers/base.css";
+@import "./styles/layers/utilities.css";
+@import "./styles/styles.css";
+@import "./styles/libs/shadcn.css";

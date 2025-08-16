@@ -34,11 +34,6 @@
   h4,
   h5,
   h6 {
-    font-family:
-      "Trebuchet MS",
-      system-ui,
-      -apple-system,
-      sans-serif;
     text-wrap: pretty;
 
     font-weight: bold !important;
