@@ -3,9 +3,12 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev --turbopack",
-    "build": "next build",
-    "start": "next start",
+    "dev": "env-cmd -e development next dev --turbopack",
+    "dev:prod": "env-cmd -e production next dev --turbopack",
+    "build": "env-cmd -e production next build",
+    "build:dev": "env-cmd -e development next build",
+    "start": "env-cmd -e production next start",
+    "start:dev": "env-cmd -e development next start",
     "lint": "next lint"
   },
   "dependencies": {
@@ -13,6 +16,7 @@
     "@radix-ui/react-slot": "^1.2.3",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
+    "env-cmd": "^10.1.0",
     "eslint-config-standard": "^17.1.0",
     "eslint-plugin-import": "^2.32.0",
     "eslint-plugin-n": "^17.21.3",
@@ -20,10 +24,12 @@
     "eslint-plugin-tailwindcss": "^3.18.2",
     "lucide-react": "^0.539.0",
     "next": "15.3.5",
+    "next-auth": "^5.0.0-beta.29",
     "next-themes": "^0.4.6",
     "prettier": "^3.6.2",
     "react": "^19.1.1",
     "react-dom": "^19.1.1",
+    "sonner": "^2.0.7",
     "tailwind-merge": "^3.3.1"
   },
   "devDependencies": {
