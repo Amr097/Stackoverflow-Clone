@@ -1,0 +1,13 @@
+@layer base {
+  :root {
+    --radius: 0.5rem;
+  }
+
+  *,
+  ::after,
+  ::before,
+  ::backdrop,
+  ::file-selector-button {
+    border-color: var(--color-gray-200, currentcolor);
+  }
+}
